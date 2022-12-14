@@ -5,7 +5,6 @@ public class UC2_Employeewage {
         int r;
         Random ran = new Random();
         r = ran.nextInt(2);
-        //r++;
         System.out.println("random numbers are   " + r);
         if (r == 0) {
             System.out.println("Employee is absent");
@@ -13,14 +12,10 @@ public class UC2_Employeewage {
 
         if (r == 1) {
             System.out.println("Employee is present");
-
             int wageperhour = 20;
-            int fullworkday = 8;
-
+            int fulltimehours= 8;
             int dailywage;
-
-            dailywage = 20 * 8;
-
+            dailywage = wageperhour *  fulltimehours;
             System.out.println("daily wage of fulltime working Employee is " + dailywage);
         }
 
